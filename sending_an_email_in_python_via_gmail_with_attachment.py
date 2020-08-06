@@ -25,7 +25,7 @@ message['Subject'] = 'A test mail sent by Python. It has an attachment.'
 message.attach(MIMEText(mail_message, 'plain'))
 
 #Send with attachment
-filename = 'D:\\USA.jpg'
+filename = 'PATH_TO_FILE' #modify the path to the file
 attachment = open(filename,'rb')
 
 attach = MIMEBase('application','octet-stream')
